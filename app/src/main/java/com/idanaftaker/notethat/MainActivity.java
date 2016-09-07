@@ -11,7 +11,5 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        DBOpenHelper helper = new DBOpenHelper(this); //create instance
-        SQLiteDatabase database = helper.getWritableDatabase(); //ref to db
     }
 }
