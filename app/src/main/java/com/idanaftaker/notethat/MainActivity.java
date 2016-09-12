@@ -11,10 +11,10 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -33,6 +33,16 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         ListView list = (ListView) findViewById(android.R.id.list);
         list.setAdapter(cursorAdapter);
 
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(MainActivity.this, EditorActivity.class);
+                Uri uri = Uri.parse(NotesProvider.CONTENT_URI + "/" + l);
+                intent.putExtra(NotesProvider.CONTENT_ITEM_TYPE, uri);
+                startActivityForResult(intent, EDITOR_REQUEST_CODE);
+            }
+        });
+        restartLoader();
         getLoaderManager().initLoader(0,null,this);
     }
 
@@ -40,7 +50,6 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         ContentValues values = new ContentValues();
         values.put(DBOpenHelper.NOTE_TEXT, noteText);
         Uri noteUri = getContentResolver().insert(NotesProvider.CONTENT_URI, values);
-        Log.d("Main Activity", "Inserted note " + noteUri.getLastPathSegment());
     }
 
     @Override
@@ -54,8 +63,8 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         switch (id){
-            case R.id.action_create_sample:
-                insertSampleData();
+            case R.id.refresh:
+                refresh();
                 break;
             case R.id.action_delete_all:
                 deleteAllNotes();
@@ -64,10 +73,10 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         return super.onOptionsItemSelected(item);
     }
 
-    private void insertSampleData() {
-        insertNote("Sample note");
-        insertNote("Multi-line\nNote");
-        insertNote("Very long note, fsdfmsdklmslkfnclkasdmksaldmclkdfncalkscndl");
+    private void refresh() {
+//        insertNote("Sample note");
+//        insertNote("Multi-line\nNote");
+
         restartLoader();
     }
 
@@ -117,5 +126,12 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     public void openEditorForNewNote(View view) {
         Intent intent = new Intent(this, EditorActivity.class);
         startActivityForResult(intent, EDITOR_REQUEST_CODE);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == EDITOR_REQUEST_CODE && requestCode == RESULT_OK){
+            restartLoader();
+        }
     }
 }

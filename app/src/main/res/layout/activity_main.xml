@@ -8,12 +8,14 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                tools:context="com.idanaftaker.notethat.MainActivity">
+                tools:context="com.idanaftaker.notethat.MainActivity"
+    android:background="@color/background">
 
     <ListView
         android:id="@+id/android:list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:background="@color/background"/>
 
     <at.markushi.ui.CircleButton
         android:layout_width="64dp"
@@ -24,7 +26,7 @@
         android:layout_alignEnd="@+id/android:list"
         android:onClick="openEditorForNewNote"
         android:layout_alignRight="@+id/android:list"
-        android:src="@drawable/ic_add"/>
+        android:src="@drawable/ic_add_white"/>
 
     <!--<Button-->
         <!--android:id="@+id/button"-->

@@ -3,9 +3,9 @@
       xmlns:tools="http://schemas.android.com/tools"
       tools:context=".MainActivity">
     <item
-        android:id="@+id/action_create_sample"
+        android:id="@+id/refresh"
         android:orderInCategory="100"
-        android:title="@string/crate_sample_data"
+        android:title="@string/refresh"
         app:showAsAction="never"/>
     <item
         android:id="@+id/action_delete_all"

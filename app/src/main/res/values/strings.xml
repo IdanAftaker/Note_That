@@ -1,7 +1,13 @@
 <resources>
-    <string name="app_name">Note That</string>
     <string name="crate_sample_data">Crate sample data</string>
     <string name="delete_all_notes">Delete all notes</string>
     <string name="are_you_sure">Are you sure?</string>
     <string name="all_deleted">All notes deleted</string>
+    <string name="New_note">New note</string>
+    <string name="note_update">Note update</string>
+    <string name="action_delete">Delete</string>
+    <string name="note_deleted">Note deleted</string>
+    <string name="note">note</string>
+    <string name="app_name">Note That</string>
+    <string name="refresh">Refresh</string>
 </resources>

@@ -8,7 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.idanaftaker.notethat.EditorActivity">
+    tools:context="com.idanaftaker.notethat.EditorActivity"
+    android:background="@color/background">
 
     <EditText
         android:layout_width="wrap_content"
@@ -18,5 +19,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"/>
+        android:layout_alignParentEnd="true"
+        android:hint="Enter note here"
+        android:textColor="@color/list_item_text"
+        android:inputType="textCapCharacters|textMultiLine"/>
 </RelativeLayout>
