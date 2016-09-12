@@ -28,14 +28,4 @@
         android:layout_alignRight="@+id/android:list"
         android:src="@drawable/ic_add_white"/>
 
-    <!--<Button-->
-        <!--android:id="@+id/button"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_alignBottom="@+id/android:list"-->
-        <!--android:layout_alignEnd="@+id/android:list"-->
-        <!--android:onClick="openEditorForNewNote"-->
-        <!--android:text="New Note"/>-->
-
-
 </RelativeLayout>

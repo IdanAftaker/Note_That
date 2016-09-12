@@ -74,8 +74,11 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     }
 
     private void refresh() {
-//        insertNote("Sample note");
-//        insertNote("Multi-line\nNote");
+        insertNote("Note That, has been rebuilt from scratch for the latest version of Android");
+        insertNote("Customize the app styles and themes implementing Google's new Material Design visual language");
+        insertNote("Create the apps data management layer using an SQL live database and two valuable Android patterns, " +
+                "a content provider that gives you a standard interface for creating, reading, updating and deleting " +
+                "notes, and a loader, to manage database calls asynchronously");
 
         restartLoader();
     }
