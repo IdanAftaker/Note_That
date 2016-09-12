@@ -9,18 +9,21 @@
 ### _Screenshots:_
 - Add
 
-<img src="https://github.com/IdanAftaker/Note_That/blob/master/Screenshot/add.png?raw=true" width="200" height="500"/>
-<img src="https://github.com/IdanAftaker/Note_That/blob/master/Screenshot/add2.png?raw=true"/>
+<img src="https://github.com/IdanAftaker/Note_That/blob/master/Screenshot/add.png?raw=true" width="250" height="500"/>
+<img src="https://github.com/IdanAftaker/Note_That/blob/master/Screenshot/add2.png?raw=true" width="250" height="500"/>
 
 - Edit
-<img src="https://github.com/IdanAftaker/Note_That/blob/master/Screenshot/edit.png?raw=true"/>
+
+<img src="https://github.com/IdanAftaker/Note_That/blob/master/Screenshot/edit.png?raw=true" width="250" height="500"/>
 
 - Delete
-<img src="https://github.com/IdanAftaker/Note_That/blob/master/Screenshot/delete.png?raw=true"/>
-<img src="https://github.com/IdanAftaker/Note_That/blob/master/Screenshot/delete2.png?raw=true"/>
+
+<img src="https://github.com/IdanAftaker/Note_That/blob/master/Screenshot/delete.png?raw=true" width="250" height="500"/>
+<img src="https://github.com/IdanAftaker/Note_That/blob/master/Screenshot/delete2.png?raw=true" width="250" height="500"/>
 
 - List
-<img src="https://github.com/IdanAftaker/Note_That/blob/master/Screenshot/list.png?raw=true"/>
+
+<img src="https://github.com/IdanAftaker/Note_That/blob/master/Screenshot/list.png?raw=true" width="250" height="500"/>
 
 
 
