@@ -8,7 +8,8 @@
 
 ### _Screenshots:_
 - Add
-<img src="https://github.com/IdanAftaker/Note_That/blob/master/Screenshot/add.png?raw=true" width="50" height="200"/>
+
+<img src="https://github.com/IdanAftaker/Note_That/blob/master/Screenshot/add.png?raw=true" width="100" height="500"/>
 <img src="https://github.com/IdanAftaker/Note_That/blob/master/Screenshot/add2.png?raw=true"/>
 
 - Edit
